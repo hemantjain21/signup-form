@@ -16,12 +16,6 @@
     position: relative;
 }
 
-.content-section{
-    width: 65vw;
-    background-color: skyblue;
-    height: 100vh;
-}
-
 .logo{
     display: flex;
     width: 100%;
@@ -45,7 +39,7 @@
 
 .image-credit{
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
     width: 100%;
     text-align: center;
     span{
@@ -54,4 +48,55 @@
     span a{
         color: white;
     }
+}
+
+.content-section{
+    width: 65vw;
+    background-color: rgb(220, 224, 226);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+
+    p,
+    button{
+        width: 70%;
+    }
+
+    p:nth-child(1),
+    p:nth-child(2){
+        font-weight: 700;
+        font-size: 2rem;
+        padding-left: 100px;
+    }
+
+    form{
+        background-color: white;
+        padding-left: 100px;
+    }
+
+    form span{
+        font-weight: 700;
+        font-size: 2rem;
+    }
+
+    #registrationFormButton{
+        background-color: #596D48;
+        color: white;
+        /* border: 1px solid black; */
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        border-radius: 5px;
+        width: 200px;
+        height: 40px;
+        font-size: 1rem;
+        margin-left: 100px;
+    }
+
+    p:last-child{
+        font-weight: 700;
+        font-size: 1rem;
+        margin-left: 100px;
+    }
+
 }
