@@ -1,13 +1,13 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-.container{
+.container {
     display: flex;
 }
 
-.left-section{
+.left-section {
     width: 35vw;
     background-image: url(images/halie-west-25xggax4bSA-unsplash.jpg);
     background-size: cover;
@@ -16,7 +16,7 @@
     position: relative;
 }
 
-.logo{
+.logo {
     display: flex;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.308);
@@ -27,30 +27,32 @@
     top: 200px;
 }
 
-.left-section .logo img{
-    height: 100px;    
+.left-section .logo img {
+    height: 100px;
 }
 
-#logo-name{
-   font-weight: 700;
-   font-size: 5rem;
-   color: white;
+#logo-name {
+    font-weight: 700;
+    font-size: 5rem;
+    color: white;
 }
 
-.image-credit{
+.image-credit {
     position: absolute;
     bottom: 10px;
     width: 100%;
     text-align: center;
-    span{
+
+    span {
         color: white;
     }
-    span a{
+
+    span a {
         color: white;
     }
 }
 
-.content-section{
+.content-section {
     width: 65vw;
     background-color: rgb(220, 224, 226);
     height: 100vh;
@@ -60,32 +62,65 @@
     gap: 30px;
 
     p,
-    button{
+    button {
         width: 70%;
     }
 
     p:nth-child(1),
-    p:nth-child(2){
+    p:nth-child(2) {
         font-weight: 700;
         font-size: 2rem;
         padding-left: 100px;
     }
 
-    form{
+    form {
         background-color: white;
-        padding-left: 100px;
+        padding: 50px 100px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
     }
 
-    form span{
-        font-weight: 700;
+    form span {
+        font-weight: 500;
         font-size: 2rem;
     }
 
-    #registrationFormButton{
+    form div {
+        display: flex;
+        width: 60%;
+        margin-right: 60px;
+    }
+
+    form div div {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+
+    }
+
+    input{
+        border-radius: 2px;
+        border: 2px solid lightgray;
+        outline: none;
+    }
+
+    input:focus {
+        border: 2px solid lightblue;
+        outline: none;
+    }
+
+    input[type="text"]:invalid {
+        border: 2px solid red;
+        outline: none;
+    }
+
+
+    #registrationFormButton {
         background-color: #596D48;
         color: white;
         /* border: 1px solid black; */
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         border-radius: 5px;
         width: 200px;
         height: 40px;
@@ -93,7 +128,7 @@
         margin-left: 100px;
     }
 
-    p:last-child{
+    p:last-child {
         font-weight: 700;
         font-size: 1rem;
         margin-left: 100px;
