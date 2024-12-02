@@ -100,21 +100,24 @@
     }
 
     input{
-        border-radius: 2px;
+        border-radius: 5px;
         border: 2px solid lightgray;
         outline: none;
+        height: 40px;
+        font-size: 1.5rem;
+        color: gray;
+        padding-left: 10px;
     }
 
     input:focus {
         border: 2px solid lightblue;
-        outline: none;
+        /* outline: none; */
     }
 
     input[type="text"]:invalid {
         border: 2px solid red;
         outline: none;
     }
-
 
     #registrationFormButton {
         background-color: #596D48;
